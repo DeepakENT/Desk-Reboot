@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Outer Border -->
+  <rect x="100" y="100" width="300" height="300"
+        fill="none"
+        stroke="#C0C0C0"
+        stroke-width="2"/>
+
+  <!-- Center Text -->
+  <text x="250" y="280"
+        text-anchor="middle"
+        font-family="Times New Roman, serif"
+        font-size="140"
+        fill="#C0C0C0"
+        letter-spacing="5">
+        SH
+  </text>
+
+  <!-- Clock Center Dot -->
+  <circle cx="250" cy="250" r="6" fill="#C8A44D"/>
+
+  <!-- Clock Hand -->
+  <line x1="250" y1="250"
+        x2="285" y2="200"
+        stroke="#C8A44D"
+        stroke-width="6"
+        stroke-linecap="round"/>
+
+  <!-- Tick Marks -->
+  <line x1="250" y1="110" x2="250" y2="125"
+        stroke="#C0C0C0" stroke-width="2"/>
+        
+  <line x1="250" y1="375" x2="250" y2="390"
+        stroke="#C0C0C0" stroke-width="2"/>
+
+  <line x1="110" y1="250" x2="125" y2="250"
+        stroke="#C0C0C0" stroke-width="2"/>
+
+  <line x1="375" y1="250" x2="390" y2="250"
+        stroke="#C0C0C0" stroke-width="2"/>
+
+</svg>

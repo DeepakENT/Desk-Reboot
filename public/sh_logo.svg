@@ -1,0 +1,34 @@
+<svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- S letter -->
+  <text
+    x="22"
+    y="475"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="415"
+    font-weight="400"
+    fill="#6b7b5b">S</text>
+
+  <!-- H letter -->
+  <text
+    x="248"
+    y="475"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="415"
+    font-weight="400"
+    fill="#6b7b5b">H</text>
+
+  <!-- Clock hand line (thick gold, upper-right ~45 deg) -->
+  <line
+    x1="303"
+    y1="274"
+    x2="445"
+    y2="130"
+    stroke="#c8963a"
+    stroke-width="9"
+    stroke-linecap="round"/>
+
+  <!-- Gold pivot circle -->
+  <circle cx="303" cy="274" r="15" fill="#c8963a"/>
+
+</svg>
