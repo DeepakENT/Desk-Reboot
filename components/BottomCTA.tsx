@@ -1,72 +1,97 @@
+"use client";
+
+import React from "react";
+
 export default function BottomCTA() {
   return (
-    <section className="w-full bg-[#ECE7DF] py-24 md:py-32 px-6">
+    <section className="w-full bg-[#009E8E] py-20 md:py-28 px-6">
 
-      <div className="max-w-3xl mx-auto text-center">
+      <div className="max-w-4xl mx-auto text-center text-white">
 
-        {/* Headline */}
+        {/* 4U HEADLINE (Identity Transformation) */}
         <h2 className="
-          text-[clamp(30px,4vw,48px)]
-          font-[var(--font-cormorant)]
-          text-[#4F5552]
+          text-[clamp(28px,4vw,44px)]
+          font-semibold
           leading-tight
+          tracking-tight
         ">
-          Trade 45 minutes for a clear mind and deep sleep
+          Become the Workspace Everyone Chooses — Not the One They Leave
         </h2>
 
-        {/* Subheading */}
-        <p className="
-          mt-6
-          text-[clamp(16px,2vw,20px)]
-          font-[var(--font-montserrat)]
-          text-[#5A605D]
-          leading-relaxed
-        ">
-          Reclaim your focus. Reclaim your family — today.
-        </p>
+        {/* 4S BODY (BDF Applied) */}
+        <div className="mt-6 space-y-4 text-[15px] sm:text-[16px] leading-relaxed text-white/90">
 
-        
-        {/* Subtle Reinforcement (No Repetition) */}
-<div className="mt-6 text-[13px] text-[#7A7A72] font-[var(--font-montserrat)]">
-  Designed for busy professionals who can’t afford burnout
-</div>
+          <p>
+            Stop worrying about empty desks.
+            <br />
+            Stop losing members to cheaper spaces.
+          </p>
 
-<div className="mt-2 text-[13px] text-[#6A7F75] font-[var(--font-montserrat)]">
-  One session is enough to feel the shift
-</div>
+          <p>
+            When you deploy Focus 15,
+            your workspace becomes a place people rely on every day.
+          </p>
 
-        {/* CTA Button */}
-        <div className="mt-12">
-          <a
-            href="https://wa.me/917539924301"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="
-              inline-block
-              bg-[#C2A15F]
-              hover:bg-[#6A7F75]
-              text-white
-              text-[16px] sm:text-[18px]
-              font-[var(--font-montserrat)]
-              px-12 py-5
-              rounded-full
-              shadow-[0_10px_30px_rgba(0,0,0,0.12)]
-              hover:shadow-[0_14px_40px_rgba(0,0,0,0.18)]
-              active:scale-95
-              transition-all duration-300
-            "
-          >
-            Book Your 45-Min Reset →
-          </a>
+          <p className="font-medium text-white">
+            You’re no longer just managing a space.
+            <br />
+            You’re leading a high-value community.
+          </p>
+
         </div>
 
-        {/* Friction Remover */}
-        <p className="mt-4 text-[13px] text-[#7A7A72] font-[var(--font-montserrat)]">
-           Book instantly on WhatsApp.
+        {/* BUTTONS */}
+        <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+
+          {/* PRIMARY CTA */}
+          <a
+            href="https://wa.me/917539924301?text=Hi%20I%20want%20to%20start%20my%2030-day%20trial%20for%20DeskReboot"
+            className="
+              w-full sm:w-auto
+              bg-white
+              text-[#009E8E]
+              font-semibold
+              text-[15px] sm:text-[16px]
+              px-8 py-4
+              rounded-sm
+              transition-all duration-300
+              hover:shadow-lg
+              hover:-translate-y-[2px]
+              active:scale-95
+            "
+          >
+            START YOUR 30-DAY TRIAL TODAY
+          </a>
+
+          {/* SECONDARY CTA */}
+          <a
+            href="https://wa.me/917539924301?text=Hi%20I%20want%20to%20claim%20a%20free%20manager%20reset%20for%20my%20workspace"
+            className="
+              w-full sm:w-auto
+              border border-white
+              text-white
+              font-semibold
+              text-[15px] sm:text-[16px]
+              px-8 py-4
+              rounded-sm
+              transition-all duration-300
+              hover:bg-white/10
+              hover:-translate-y-[2px]
+              active:scale-95
+            "
+          >
+            CLAIM A FREE MANAGER'S RESET
+          </a>
+
+        </div>
+
+        {/* MICRO TRUST */}
+        <p className="mt-5 text-[13px] text-white/80">
+          Takes less than 2 minutes. No commitment required.
         </p>
 
       </div>
+
     </section>
   );
 }
-

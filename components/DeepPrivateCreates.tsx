@@ -1,74 +1,86 @@
+"use client";
+
 import Image from "next/image";
 
 export default function DeepPrivateCreates() {
   return (
-    <section className="relative bg-[#F4F1EC] py-20 md:py-28 overflow-hidden">
+    <section className="relative bg-[#F5F7FA] py-16 sm:py-20 md:py-28 overflow-hidden">
 
       {/* Subtle texture */}
       <div className="absolute inset-0 opacity-[0.04] pointer-events-none 
         bg-[radial-gradient(circle_at_25%_25%,#000_1px,transparent_1px)] 
         bg-[length:60px_60px]" />
 
-      <div className="relative max-w-6xl mx-auto px-6">
+      <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
 
-        {/* Heading */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="text-[clamp(26px,3.5vw,40px)] font-[var(--font-cormorant)] text-[#4F5552] leading-tight">
-            What 45 Minutes Can Reset
+        {/* 4U HEADLINE */}
+        <div className="text-center max-w-3xl mx-auto">
+          <h2 className="
+            text-[clamp(26px,4vw,42px)]
+            font-semibold
+            text-[#2C5AA0]
+            leading-tight
+            tracking-tight
+          ">
+            Turn Your Workspace Into a High-Retention Asset in Just 15 Minutes a Day
           </h2>
 
-          <p className="mt-4 text-[#6B6B63] text-[15px] md:text-[16px] font-[var(--font-montserrat)]">
-            Not temporary relief — a full nervous system reset designed for real stress.
+          {/* 4S BODY */}
+          <p className="mt-5 text-[#374151] text-[15px] sm:text-[16px] leading-relaxed">
+            When members feel better, they stay longer.
+            <br />
+            When they stay longer, your revenue stabilizes.
           </p>
         </div>
 
-        {/* Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
+        {/* CONTENT */}
+        <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
-          {/* LEFT — Benefit Cards */}
+          {/* LEFT — BENEFITS */}
           <div className="space-y-6">
 
             {[
               {
-                title: "Clear Head, No Fog",
-                desc: "That heavy, cloudy feeling lifts. You think faster, respond better."
+                title: "Increase Lease Renewals",
+                desc: "Members feel physically recharged. They stay because they can’t get this anywhere else."
               },
               {
-                title: "Body Feels Light Again",
-                desc: "Neck, shoulders, back — tension melts without needing medication."
+                title: "Close Tours Faster",
+                desc: "Let prospects experience a reset during visits. The decision becomes easy."
               },
               {
-                title: "Deep Sleep Comes Naturally",
-                desc: "You fall asleep faster. No scrolling. No racing thoughts."
-              },
-              {
-                title: "Present at Home",
-                desc: "You’re actually there — with your family, not your phone."
-              },
-              {
-                title: "Work Feels Effortless",
-                desc: "Sharper focus. Fewer mistakes. Tasks flow without resistance."
+                title: "Create a High-Energy Floor",
+                desc: "Remove brain fog. Replace it with focus, clarity, and productivity."
               }
             ].map((item, i) => (
               <div
                 key={i}
                 className="
                   flex items-start gap-4
-                  bg-white/70 backdrop-blur-sm
-                  p-5 rounded-xl
-                  shadow-sm hover:shadow-md
-                  transition duration-300
+                  bg-white
+                  p-6
+                  rounded-xl
+                  border border-gray-100
+                  shadow-sm
+                  hover:shadow-lg
+                  hover:-translate-y-[2px]
+                  transition-all duration-300
                 "
               >
-                <div className="w-8 h-8 flex items-center justify-center rounded-full bg-[#6A7F75] text-white text-sm mt-1">
-                  ✓
+                {/* Icon */}
+                <div className="
+                  w-9 h-9 flex items-center justify-center
+                  rounded-full bg-[#00BFA6] text-white text-sm mt-1
+                ">
+                  ✔
                 </div>
 
+                {/* Text */}
                 <div>
-                  <h4 className="text-[#4F5552] text-[16px] md:text-[17px] font-[var(--font-montserrat)]">
+                  <h4 className="text-[#2E2E2E] text-[16px] sm:text-[17px] font-semibold">
                     {item.title}
                   </h4>
-                  <p className="text-[#6B6B63] text-[14px] md:text-[15px] mt-1 leading-relaxed">
+                  <p className="text-[#6B7280] text-[14px] sm:text-[15px] mt-1 leading-relaxed">
                     {item.desc}
                   </p>
                 </div>
@@ -77,37 +89,39 @@ export default function DeepPrivateCreates() {
 
           </div>
 
-          {/* RIGHT — Image + overlay proof */}
+          {/* RIGHT — IMAGE */}
           <div className="relative group">
 
-            <div className="rounded-2xl overflow-hidden shadow-[0_18px_45px_rgba(0,0,0,0.08)]">
+            <div className="
+              rounded-2xl overflow-hidden
+              shadow-[0_18px_45px_rgba(0,0,0,0.08)]
+            ">
               <Image
-                src="/deep-rest.jpg"
-                alt="Relaxed woman after stress relief session"
-                width={700}
-                height={500}
+                src="/coworking-success.png"
+                alt="Happy productive professionals in coworking space"
+                width={800}
+                height={600}
                 className="
                   object-cover w-full h-full
-                  transition-transform duration-700 ease-out
-                  md:group-hover:scale-[1.04]
+                  transition-transform duration-700
+                  md:group-hover:scale-[1.05]
                 "
               />
             </div>
 
-            {/* Floating Proof Card */}
+            {/* PROOF BAR */}
             <div className="
               absolute bottom-4 left-4 right-4
-              bg-white/90 backdrop-blur-md
-              rounded-xl px-4 py-3
+              bg-white/95 backdrop-blur-md
+              rounded-lg px-4 py-3
               shadow-md
               text-center
-              text-[13px] md:text-[14px]
-              text-[#5A605D]
-              font-[var(--font-montserrat)]
+              text-[13px] sm:text-[14px]
+              text-[#374151]
             ">
               <span className="inline-flex items-center gap-2">
                 <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-                Most clients feel lighter after just one session
+                Workspaces with retention systems see higher renewals
               </span>
             </div>
 
@@ -115,15 +129,17 @@ export default function DeepPrivateCreates() {
 
         </div>
 
-        {/* Closing Identity Line */}
+        {/* CLOSING (EMOTIONAL + LOGICAL) */}
         <div className="mt-16 md:mt-20 text-center max-w-2xl mx-auto">
           <p className="
             text-[clamp(20px,2.5vw,26px)]
-            font-[var(--font-cormorant)]
-            text-[#4F5552]
+            font-semibold
+            text-[#2E2E2E]
             leading-relaxed
           ">
-            You don’t just relax. You return to control.
+            This isn’t a perk.
+            <br />
+            It’s your competitive advantage.
           </p>
         </div>
 

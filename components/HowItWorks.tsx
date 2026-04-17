@@ -1,130 +1,131 @@
+"use client";
+
 import React from "react";
 
 export default function HowItWorks() {
   return (
-    <section className="bg-[#F4F1EC] py-20 md:py-28 px-6">
-
-      {/* Container */}
-      <div className="max-w-6xl mx-auto">
+    <section className="bg-white py-20 md:py-28 px-6">
+      <div className="max-w-7xl mx-auto">
 
         {/* Heading */}
-        <div className="text-center max-w-2xl mx-auto">
-          <h2 className="text-[clamp(32px,4vw,44px)] font-[var(--font-cormorant)] text-[#4F5552] leading-tight">
-            The Stress Reset Roadmap
+        <div className="text-center max-w-3xl mx-auto">
+          <h2 className="
+            text-[clamp(28px,4vw,44px)]
+            font-semibold
+            text-[#2C5AA0]
+            leading-tight
+            tracking-tight
+          ">
+            Launch in 3 Simple Steps
           </h2>
 
-          <div className="mt-6 h-px bg-[#E5DFD6] w-full" />
-
-          <p className="mt-6 text-[#5A605D] text-[16px] md:text-[17px] font-[var(--font-montserrat)] leading-relaxed">
-            Start with one session. Feel the difference immediately.
+          <p className="mt-4 text-[#6B7280] text-[16px]">
+            No extra workload. No operational complexity.
           </p>
         </div>
 
         {/* Steps */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
+        <div className="mt-16 relative">
 
-          {/* Step Card */}
-          <div className="group bg-white/60 backdrop-blur-sm rounded-2xl p-8 shadow-sm hover:shadow-md transition duration-300 text-center">
-            
-            <div className="text-3xl text-[#6A7F75] mb-4">⏱️</div>
+          {/* Connector Line (Desktop only) */}
+          <div className="hidden md:block absolute top-10 left-0 right-0 h-[2px] bg-[#E5E7EB]" />
 
-            <h3 className="text-[18px] md:text-[20px] font-[var(--font-montserrat)] text-[#4F5552] mb-3">
-              Choose Your Slot
-            </h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-6 relative">
 
-            <p className="text-[#5A605D] text-[15px] md:text-[16px] leading-relaxed">
-              Pick a 45-minute time that fits your day. 
-            </p>
-          </div>
+            {/* Step 1 */}
+            <div className="group text-center px-6 py-8 rounded-xl border border-gray-100 hover:shadow-lg transition-all duration-300 bg-white">
+              
+              {/* Number */}
+              <div className="mx-auto w-10 h-10 flex items-center justify-center rounded-full bg-[#4A90E2] text-white text-sm font-semibold mb-4">
+                1
+              </div>
 
-          {/* Step Card */}
-          <div className="group bg-white/60 backdrop-blur-sm rounded-2xl p-8 shadow-sm hover:shadow-md transition duration-300 text-center">
-            
-            <div className="text-3xl text-[#6A7F75] mb-4">🧘</div>
+              {/* Icon */}
+              <div className="text-3xl mb-4">📍</div>
 
-            <h3 className="text-[18px] md:text-[20px] font-[var(--font-montserrat)] text-[#4F5552] mb-3">
-              The 30 / 15 Reset
-            </h3>
+              <h3 className="text-[18px] font-semibold text-[#2E2E2E] mb-3">
+                Start Your Free Trial
+              </h3>
 
-            <p className="text-[#5A605D] text-[15px] md:text-[16px] leading-relaxed">
-              30 minutes to release physical tension. <br /> 15 minutes to calm and clear your mind.
-            </p>
-          </div>
+              <p className="text-[#6B7280] text-[15px] leading-relaxed">
+                Claim your 7KM radius exclusive territory and activate your workspace in minutes.
+              </p>
 
-          {/* Step Card */}
-          <div className="group bg-white/60 backdrop-blur-sm rounded-2xl p-8 shadow-sm hover:shadow-md transition duration-300 text-center">
-            
-            <div className="text-3xl text-[#6A7F75] mb-4">✨</div>
+            </div>
 
-            <h3 className="text-[18px] md:text-[20px] font-[var(--font-montserrat)] text-[#4F5552] mb-3">
-              Step Out Refreshed
-            </h3>
+            {/* Step 2 */}
+            <div className="group text-center px-6 py-8 rounded-xl border border-gray-100 hover:shadow-lg transition-all duration-300 bg-white">
 
-            <p className="text-[#5A605D] text-[15px] md:text-[16px] leading-relaxed">
-             Clear mind. Present at home. <br /> Ready for tomorrow.
-            </p>
-          </div>
+              <div className="mx-auto w-10 h-10 flex items-center justify-center rounded-full bg-[#4A90E2] text-white text-sm font-semibold mb-4">
+                2
+              </div>
 
-        </div>
+              <div className="text-3xl mb-4">⚙️</div>
 
-        {/* Divider */}
-        <div className="mt-16 h-px bg-[#E5DFD6] w-full max-w-4xl mx-auto" />
+              <h3 className="text-[18px] font-semibold text-[#2E2E2E] mb-3">
+                We Handle Everything
+              </h3>
 
-        {/* Trust Row */}
-        <div className="mt-12 flex flex-wrap justify-center gap-6 md:gap-10 text-[#4F5552] font-[var(--font-montserrat)] text-[15px] md:text-[16px]">
+              <p className="text-[#6B7280] text-[15px] leading-relaxed">
+                Booking, scheduling, and on-site specialists — fully managed for you.
+              </p>
 
-          <div className="flex items-center gap-2">
-            <span className="text-[#6A7F75]">🔓</span>
-            No contracts
-          </div>
+            </div>
 
-          <div className="flex items-center gap-2">
-            <span className="text-[#6A7F75]">💰</span>
-            No hidden fees
-          </div>
+            {/* Step 3 */}
+            <div className="group text-center px-6 py-8 rounded-xl border border-gray-100 hover:shadow-lg transition-all duration-300 bg-white">
 
-          <div className="flex items-center gap-2">
-            <span className="text-[#6A7F75]">⏱️</span>
-            45 minutes only
-          </div>
+              <div className="mx-auto w-10 h-10 flex items-center justify-center rounded-full bg-[#4A90E2] text-white text-sm font-semibold mb-4">
+                3
+              </div>
 
-          <div className="flex items-center gap-2">
-            <span className="text-[#6A7F75]">🧼</span>
-            Clean setup
+              <div className="text-3xl mb-4">📈</div>
+
+              <h3 className="text-[18px] font-semibold text-[#2E2E2E] mb-3">
+                Retain & Grow Revenue
+              </h3>
+
+              <p className="text-[#6B7280] text-[15px] leading-relaxed">
+                Keep members engaged, reduce churn, and boost new desk sales.
+              </p>
+
+            </div>
+
           </div>
 
         </div>
 
+        {/* CTA */}
+        <div className="mt-16 text-center">
+
+          <a
+            href="https://wa.me/917539924301?text=Hi%20I%20want%20to%20increase%20member%20retention%20and%20start%20my%2030-day%20trial%20for%20DeskReboot"
+            className="
+              inline-flex items-center justify-center
+              w-full sm:w-auto
+              bg-[#00BFA6]
+              hover:bg-[#009e8e]
+              text-white
+              text-[14px] sm:text-[16px]
+              px-10 py-4
+              rounded-sm
+              font-semibold
+              transition-all duration-300
+              hover:shadow-lg
+              hover:-translate-y-[2px]
+              active:scale-95
+            "
+          >
+            START YOUR 30-DAY TRIAL TODAY
+          </a>
+
+          <p className="mt-4 text-sm text-[#6B7280]">
+            Takes less than 2 minutes. No commitment required.
+          </p>
+
+        </div>
+
       </div>
-
-      {/* CTA Section */}
-      <div className="mt-20 text-center px-6">
-
-        <h2 className="text-[clamp(26px,4vw,48px)] font-[var(--font-cormorant)] text-[#4F5552] leading-tight max-w-2xl mx-auto">
-          Ready to rest — fully on your terms?
-        </h2>
-
-        <a
-          href="https://wa.me/917539924301"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="
-            mt-8 inline-block
-            bg-[#C2A15F]
-            hover:bg-[#6A7F75]
-            text-white
-            text-[15px] md:text-[16px]
-            px-10 py-4
-            rounded-full
-            transition-all duration-300
-            shadow-md hover:shadow-lg hover:scale-[1.02]
-          "
-        >
-          Book Your 45-Min Reset →
-        </a>
-
-      </div>
-
     </section>
   );
 }

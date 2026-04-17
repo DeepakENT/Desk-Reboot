@@ -15,7 +15,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Soft Hour",
+  title: "Desk Reboot",
   description: "Professional In-Home Massage Service",
 };
 

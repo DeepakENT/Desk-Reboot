@@ -1,0 +1,12 @@
+<svg width="220" height="40" viewBox="0 0 220 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <text 
+    x="0" 
+    y="28" 
+    font-family="Inter, sans-serif" 
+    font-size="28" 
+    font-weight="600"
+    letter-spacing="0"
+  >
+    <tspan fill="#6B7280">Desk</tspan><tspan fill="#4A90E2" dx="-2">Reboot</tspan>
+  </text>
+</svg>
