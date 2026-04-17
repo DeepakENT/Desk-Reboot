@@ -1,27 +1,26 @@
 
 
-
-
 <svg width="340" height="72" viewBox="0 0 340 70" xmlns="http://www.w3.org/2000/svg">
+
   <defs>
-    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="grad" x1="0" y1="0" x2="340" y2="70">
       <stop offset="0%" stop-color="#00BFA6"/>
       <stop offset="100%" stop-color="#2C5AA0"/>
     </linearGradient>
   </defs>
 
   <g transform="translate(0,5)">
-    <rect width="52" height="52" rx="14" fill="url(#brandGrad)"/>
+    <rect width="52" height="52" rx="14" fill="url(#grad)"/>
     
-    <g stroke="white" stroke-width="3" fill="none" stroke-linecap="round">
+    <g stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round">
       <path d="M19 19.5 A 10.5 10.5 0 1 0 33 19.5" />
       <line x1="26" y1="14.5" x2="26" y2="24.5" />
     </g>
   </g>
 
   <text x="70" y="45"
-    font-family="'Inter', 'Manrope', sans-serif"
-    font-size="37"
+    font-family="Inter, Manrope, sans-serif"
+    font-size="34"
     fill="#4B5563"
     font-weight="600"
     letter-spacing="0.2">
@@ -29,11 +28,12 @@
   </text>
 
   <text x="162" y="45"
-    font-family="'Inter', 'Manrope', sans-serif"
-    font-size="37"
-    fill="url(#brandGrad)"
+    font-family="Inter, Manrope, sans-serif"
+    font-size="34"
+    fill="url(#grad)"
     font-weight="700"
     letter-spacing="0.2">
     Reboot
   </text>
+
 </svg>
