@@ -1,12 +1,39 @@
-<svg width="220" height="40" viewBox="0 0 220 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <text 
-    x="0" 
-    y="28" 
-    font-family="Inter, sans-serif" 
-    font-size="28" 
+<svg width="340" height="72" viewBox="0 0 340 70" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Gradient -->
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="340" y2="70">
+      <stop offset="0%" stop-color="#00BFA6"/>
+      <stop offset="100%" stop-color="#2C5AA0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Reboot Icon (OWNABLE MARK) -->
+  <g transform="translate(0,5)">
+    <rect width="52" height="52" rx="14" fill="url(#grad)"/>
+    
+    <circle cx="26" cy="28" r="10" stroke="white" stroke-width="2.5"/>
+    <line x1="26" y1="14" x2="26" y2="24" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Desk -->
+  <text x="70" y="45"
+    font-family="Inter, Manrope, sans-serif"
+    font-size="34"
+    fill="#4B5563"
     font-weight="600"
-    letter-spacing="0"
-  >
-    <tspan fill="#6B7280">Desk</tspan><tspan fill="#4A90E2" dx="-2">Reboot</tspan>
+    letter-spacing="0.2">
+    Desk
   </text>
+
+  <!-- Reboot -->
+  <text x="162" y="45"
+    font-family="Inter, Manrope, sans-serif"
+    font-size="34"
+    fill="url(#grad)"
+    font-weight="700"
+    letter-spacing="0.2">
+    Reboot
+  </text>
+
 </svg>
