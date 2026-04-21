@@ -8,7 +8,7 @@ export default function Navbar() {
           <img
             src="/deskreboot-logo.svg"
             alt="DeskReboot"
-            className="h-[26px] sm:h-[30px] w-auto"
+            className="h-10 w-auto"
           />
         </div>
 

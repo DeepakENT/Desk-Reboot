@@ -14,9 +14,9 @@ const montserrat = Montserrat({
   variable: "--font-montserrat",
 });
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Desk Reboot",
-  description: "Professional In-Home Massage Service",
+  description: "15-min reset for better focus, posture, and performance.",
 };
 
 export default function RootLayout({

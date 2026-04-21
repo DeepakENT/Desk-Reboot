@@ -116,7 +116,7 @@ export default function HowItWorks() {
               active:scale-95
             "
           >
-            START YOUR 30-DAY TRIAL TODAY
+            START YOUR 14-DAY TRIAL TODAY
           </a>
 
           <p className="mt-4 text-sm text-[#6B7280]">

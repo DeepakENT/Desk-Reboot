@@ -134,7 +134,7 @@ const Solution: React.FC = () => {
                 active:scale-95
               "
             >
-              START YOUR 30-DAY TRIAL TODAY
+              START YOUR 14-DAY TRIAL TODAY
             </a>
 
             <p className="mt-3 text-sm text-[#6B7280]">

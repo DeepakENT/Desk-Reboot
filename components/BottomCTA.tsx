@@ -60,7 +60,7 @@ export default function BottomCTA() {
               active:scale-95
             "
           >
-            START YOUR 30-DAY TRIAL TODAY
+            START YOUR 14-DAY TRIAL TODAY
           </a>
 
           {/* SECONDARY CTA */}
